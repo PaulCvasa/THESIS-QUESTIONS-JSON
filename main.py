@@ -1,4 +1,6 @@
 import json
+import sys
+from os import path
 from random import shuffle
 
 
@@ -29,7 +31,12 @@ class Test:
 
 
 def main():
-    ti = Test('ads.json')
+    test_file = input('Input the file name of the test: ')
+    if not path.exists(test_file):
+        print(f"File {test_file} was not found.")
+        sys.exit(1)
+
+    ti = Test(test_file)
     keys = list(ti.questions.keys())
     shuffle(keys)
     for key in keys:
