@@ -183,11 +183,11 @@
     "8, 11, 9, 6, 1, 8, 2, 2, 8": false
   },
   "9. How many different trees with 5 nodes, labeled with numbers from 1 to 5, there exist?": {
-    "10": true,
+    "10": false,
     "273": false,
-    "32": true,
+    "32": false,
     "120": false,
-    "125": false
+    "125": true
   },
   "10. In how many ways can we color the following graph G with three colors?": {
     "0": false,
